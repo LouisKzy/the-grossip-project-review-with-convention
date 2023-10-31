@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <div class="card my-3">
+    <div class="card-body">
+      <h1 class="card-title"><%= @gossip.title %></h1>
+      <p class="card-subtitle mb-2 text-muted"> Écrit par : <%= link_to @gossip.user.first_name, user_path(@gossip.user) %></p>
+      <p class="card-subtitle mb-2 text-muted">Date de création : <%= @gossip.created_at.strftime('%d %b %Y à %H:%M') %></p>
+      <p class="card-text"><strong>Ce qu'il balance :</strong></p>
+      <p class="card-text"><%= @gossip.content %></p>
+    </div>
+  </div>
+</div>
+
+
+
+
